@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 const Input = ({ name, label, value, placeholder, type, error, onChange }) => {
     const classes = `form-control form-control-lg ${error ? 'is-invalid' : ''}`;
-    console.log(error)
     return (
         <div className="form-group">
             <label htmlFor={label}>{label}</label>
