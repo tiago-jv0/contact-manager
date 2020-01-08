@@ -5,7 +5,7 @@ const Input = ({ name, label, value, placeholder, type, error, onChange }) => {
     console.log(error)
     return (
         <div className="form-group">
-            <label htmlFor={label}>Name</label>
+            <label htmlFor={label}>{label}</label>
             <input
                 onChange={onChange}
                 name={name}
