@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Consumer } from '../Context';
+import { Consumer } from '../../Context';
 
-const Contact = ({ contact, onDelete }) => {
+const Contact = ({ contact }) => {
     const [showInformation, setShowInformation] = useState(false);
 
     return (
@@ -41,7 +41,6 @@ const Contact = ({ contact, onDelete }) => {
 
 Contact.propTypes = {
     contact: PropTypes.object.isRequired,
-    onDelete: PropTypes.func.isRequired,
 };
 
 export default Contact;
